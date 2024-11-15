@@ -1,8 +1,8 @@
 <template>
-  <footer class="bg-slate-100  py-10 px-5 md:px-20">
-    <div class="grid grid-cols-12 md:flex-row justify-between gap-10">
-      <div class="col-span-4 space-y-4">
-        <nuxt-link to="/" class="flex items-center space-x-2">
+  <footer class="bg-slate-100 py-10 px-5 md:px-20">
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-10">
+      <div class="col-span-1 md:col-span-4 space-y-4 text-center md:text-left">
+        <nuxt-link to="/" class="flex items-center justify-center md:justify-start space-x-2">
           <img src="@/assets/images/logo.png" alt="Logo" class="w-20">
           <span class="text-lg font-medium">GDG Lubumbashi</span>
         </nuxt-link>
@@ -10,9 +10,8 @@
           GDG Lubumbashi is a local tech community focused on learning, sharing, and innovating with Google technologies and beyond.
         </p>
       </div>
-
-      <div class="col-span-4 flex  justify-center">
-        <ul class="flex space-x-6">
+      <div class="col-span-1 md:col-span-4 flex justify-center">
+        <ul class="flex flex-col md:flex-row items-center md:space-x-6 space-y-4 md:space-y-0">
           <li>
             <nuxt-link to="/" class="hover:text-green-400 transition">Home</nuxt-link>
           </li>
@@ -27,7 +26,7 @@
           </li>
         </ul>
       </div>
-      <div class="col-span-4 flex  justify-center">
+      <div class="col-span-1 md:col-span-4 flex justify-center">
         <div class="flex space-x-4">
           <nuxt-link to="https://twitter.com" target="_blank" class="hover:text-green-400">
             <IconsX class="text-2xl" />
@@ -41,7 +40,8 @@
         </div>
       </div>
     </div>
-    <div class="mt-10 border-t border-gray-600 pt-4 text-center text-sm text-gray-700">
+
+    <div class="mt-10 border-t border-slate-400 pt-4 text-center text-sm text-gray-700">
       &copy; 2024 GDG Lubumbashi. All rights reserved.
     </div>
   </footer>
