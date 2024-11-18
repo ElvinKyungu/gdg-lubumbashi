@@ -1,6 +1,6 @@
 <template>
   <footer class="bg-slate-100 py-10 px-5 md:px-20">
-    <div class="grid grid-cols-1 md:grid-cols-12 gap-10">
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-10 items-center">
       <div class="col-span-1 md:col-span-4 space-y-4 text-center md:text-left">
         <nuxt-link to="/" class="flex items-center justify-center md:justify-start space-x-2">
           <img src="@/assets/images/logo.png" alt="Logo" class="w-20">
@@ -11,7 +11,7 @@
         </p>
       </div>
       <div class="col-span-1 md:col-span-4 flex justify-center">
-        <ul class="flex flex-col md:flex-row items-center md:space-x-6 space-y-4 md:space-y-0">
+        <ul class="flex md:flex-row items-center space-x-4 md:space-x-6 md:space-y-0">
           <li>
             <nuxt-link to="/" class="hover:text-green-400 transition">Home</nuxt-link>
           </li>

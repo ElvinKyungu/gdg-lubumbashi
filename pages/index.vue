@@ -4,7 +4,7 @@
     <h1 class="text-3xl md:text-5xl xl:text-7xl font-bold text-center my-10">
       DevFest Lubumbashi 2024
     </h1>
-    <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:space-x-20 items-center">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-5 lg:space-x-20 items-center">
       <!-- Empty space on larger screens -->
       <div class="hidden lg:block lg:col-span-2"></div>
   
@@ -26,7 +26,7 @@
           or by simply meeting fellow local developers, DevFest attendees learn how to build together and innovate on
           Google’s developer tools.
         </p>
-        <ul class="flex flex-col md:flex-row gap-4 mt-5 items-center justify-center lg:justify-start">
+        <ul class="flex flex-col md:flex-row gap-4 text-base mt-5 items-center justify-center lg:justify-start">
           <li class="flex items-center gap-2">
             <IconsCalendar />
             <span>November 9th, 2024</span>
@@ -49,6 +49,8 @@
   
     <!-- GridHomeGrid Section -->
     <GridHomeGrid />
+    <SponsorHomeSponsors/>
+    <ContactHomeContact/>
   </main>
   <BaseFooter/>
 </template>
