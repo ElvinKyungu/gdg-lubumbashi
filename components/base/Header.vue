@@ -1,33 +1,33 @@
 <script setup lang="ts">
-import gsap from "gsap";
+import gsap from "gsap"
 
-const isMenuOpen = ref(false);
+const isMenuOpen = ref(false)
 
 onMounted(() => {
-  const links = document.querySelectorAll(".nav-link");
+  const links = document.querySelectorAll(".nav-link")
 
   links.forEach(link => {
-    const border = document.createElement("div");
-    border.className = "border-anim";
-    link.appendChild(border);
+    const border = document.createElement("div")
+    border.className = "border-anim"
+    link.appendChild(border)
 
     link.addEventListener("mouseenter", () => {
       gsap.to(border, {
         width: "100%",
         duration: 0.2,
         ease: "power2.out",
-      });
-    });
+      })
+    })
 
     link.addEventListener("mouseleave", () => {
       gsap.to(border, {
         width: "0%",
         duration: 0.2,
         ease: "power2.out",
-      });
-    });
-  });
-});
+      })
+    })
+  })
+})
 
 const toggleMenu = () => {
   isMenuOpen.value = !isMenuOpen.value;
@@ -36,8 +36,8 @@ const toggleMenu = () => {
     opacity: isMenuOpen.value ? 1 : 0,
     duration: 0.5,
     ease: "power2.out",
-  });
-};
+  })
+}
 </script>
 
 <template>
